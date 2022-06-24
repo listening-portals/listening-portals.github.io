@@ -1,0 +1,915 @@
+div {
+  overflow-x: none;
+}
+
+@media (min-width: 1200px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(251, 255, 0);
+    background-color: rgb(17, 0, 255);
+    padding-bottom: 40px;
+    min-width: 400px;
+  }
+
+  .App .Header {
+    margin-top: 50px;
+    padding-bottom: 11px;
+  }
+
+  .App .Background {
+    position: absolute;
+    background-color: rgb(17, 0, 255);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+  }
+
+  .App .Container {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+  }  
+
+  .App .Separator1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8px;
+    border-top: 8px solid yellow;  
+    border-bottom: 2px solid yellow;  
+    margin-bottom: 2px;
+  }
+
+  .App .Separator2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid yellow;  
+  }
+
+  .App .Description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App .Streams {
+    display: flex;
+    flex-direction: row;
+    padding-top: 65px;
+  }
+
+  .App .BoxPic > img {
+    width: 100%;
+    filter: blur(1px)
+  }  
+
+  .App .BoxPic {
+    display: flex;
+    flex-grow: 1.1;
+    flex-basis: 0;
+  }
+
+
+  .App .Buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-around;
+    padding-left: 60px;
+  }
+
+  .App .Stream1,
+  .App .Stream2,
+  .App .Stream3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .App .Stream2 {
+    flex-direction: row-reverse;
+  }
+  .App .Stream1,
+  .App .Stream3 {
+    flex-direction: row;
+  }
+
+  .App .ButtonCaption {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App .ButtonWrapper {
+    margin-right: 20px;
+    margin-left: 5px;
+  }
+
+  .App .Stream2 .ButtonWrapper {
+    margin-left: 20px;
+  }
+
+  .App .Button {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-right: 0;
+    border-left: 50px solid rgb(251, 255, 0);
+  }
+
+  p {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  a.link, a.link:visited, a:visited.link, a:hover.link, a:active.link {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-decoration: underline;
+    color: rgb(251, 255, 0);
+  }
+
+  h1 {
+    font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+  }
+
+  h1 {
+    font-size: 79px;
+    line-height: 81.2px;
+  }
+
+  .App .English {
+    margin-top: 80px;
+  }
+
+  .App .Ukrainian {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(251, 255, 0);
+    background-color: rgb(17, 0, 255);
+    padding-bottom: 40px;
+    min-width: 400px;
+  }
+
+  .App .Header {
+    margin-top: 50px;
+    padding-bottom: 11px;
+  }
+
+  .App .Background {
+    position: absolute;
+    background-color: rgb(17, 0, 255);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+  }
+
+  .App .Container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+  }  
+
+  .App .Separator1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8px;
+    border-top: 8px solid yellow;  
+    border-bottom: 2px solid yellow;  
+    margin-bottom: 2px;
+  }
+
+  .App .Separator2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid yellow;  
+  }
+
+  .App .Description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App .Streams {
+    display: flex;
+    flex-direction: row;
+    padding-top: 65px;
+  }
+
+  .App .BoxPic > img {
+    width: 100%;
+    filter: blur(1px)
+  }  
+
+
+  .App .BoxPic {
+    display: flex;
+    flex-grow: 1.1;
+    flex-basis: 0;
+  }
+
+
+  .App .Buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-around;
+    padding-left: 60px;
+  }
+
+
+  .App .Stream1,
+  .App .Stream2,
+  .App .Stream3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .App .Stream2 {
+    flex-direction: row-reverse;
+  }
+  .App .Stream1,
+  .App .Stream3 {
+    flex-direction: row;
+  }
+
+  .App .ButtonCaption {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App .ButtonWrapper {
+    margin-right: 20px;
+    margin-left: 5px;
+  }
+
+  .App .Stream2 .ButtonWrapper {
+    margin-left: 20px;
+  }
+
+  .App .Button {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-right: 0;
+    border-left: 50px solid rgb(251, 255, 0);
+  }
+
+  p {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  a.link, a.link:visited, a:visited.link, a:hover.link, a:active.link {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-decoration: underline;
+    color: rgb(251, 255, 0);
+  }
+
+  h1 {
+    font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+  }
+
+  h1 {
+    font-size: 79px;
+    line-height: 81.2px;
+  }
+
+  .App .English {
+    margin-top: 80px;
+  }
+
+  .App .Ukrainian {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(251, 255, 0);
+    background-color: rgb(17, 0, 255);
+    padding-bottom: 40px;
+    min-width: 400px;
+  }
+
+  .App .Header {
+    margin-top: 50px;
+    padding-bottom: 11px;
+  }
+
+  .App .Background {
+    position: absolute;
+    background-color: rgb(17, 0, 255);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+  }
+
+  .App .Container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+  }  
+
+  .App .Separator1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8px;
+    border-top: 8px solid yellow;  
+    border-bottom: 2px solid yellow;  
+    margin-bottom: 2px;
+  }
+
+  .App .Separator2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid yellow;  
+  }
+
+  .App .Description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App .Streams {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    align-items: center;
+  }
+
+  .App .BoxPic > img {
+    width: 100%;
+    filter: blur(1px)
+  }  
+
+  .App .BoxPic {
+    width: 70%;
+    display: flex;
+    flex-grow: 1.1;
+    flex-basis: 0;
+    align-items: center;
+  }
+
+
+  .App .Buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-around;
+    align-items: left;
+    margin-top: 20px;
+  }
+
+  .App .Stream1,
+  .App .Stream2,
+  .App .Stream3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+  .App .ButtonCaption {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App .ButtonWrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+  }
+
+  .App .Button {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-right: 0;
+    border-left: 50px solid rgb(251, 255, 0);
+  }
+
+  p {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  a.link, a.link:visited, a:visited.link, a:hover.link, a:active.link {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-decoration: underline;
+    color: rgb(251, 255, 0);
+  }
+
+  h1 {
+    font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+  }
+
+  h1 {
+    font-size: 79px;
+    line-height: 81.2px;
+  }
+
+  .App .English {
+    margin-top: 80px;
+  }
+
+  .App .Ukrainian {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(251, 255, 0);
+    background-color: rgb(17, 0, 255);
+    padding-bottom: 40px;
+    min-width: 400px;
+  }
+
+  .App .Header {
+    margin-top: 20px;
+    padding-bottom: 11px;
+  }
+
+  .App .Background {
+    position: absolute;
+    background-color: rgb(17, 0, 255);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+  }
+
+  .App .Container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }  
+
+  .App .Separator1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8px;
+    border-top: 8px solid yellow;  
+    border-bottom: 2px solid yellow;  
+    margin-bottom: 2px;
+  }
+
+  .App .Separator2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid yellow;  
+  }
+
+  .App .Description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App .Streams {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    align-items: center;
+  }
+
+  .App .BoxPic > img {
+    width: 100%;
+    filter: blur(1px)
+  }  
+
+  .App .BoxPic {
+    width: 90%;
+    display: flex;
+    flex-grow: 1.1;
+    flex-basis: 0;
+    align-items: center;
+  }
+
+
+  .App .Buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-around;
+    align-items: left;
+    margin-top: 20px;
+  }
+
+  .App .Stream1,
+  .App .Stream2,
+  .App .Stream3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+  .App .ButtonCaption {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App .ButtonWrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+  }
+
+  .App .Button {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-right: 0;
+    border-left: 50px solid rgb(251, 255, 0);
+  }
+
+  p {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  a.link, a.link:visited, a:visited.link, a:hover.link, a:active.link {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-decoration: underline;
+    color: rgb(251, 255, 0);
+  }
+
+  h1 {
+    font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+  }
+
+  h1 {
+    font-size: 59px;
+    line-height: 81.2px;
+  }
+
+  .App .English {
+    margin-top: 80px;
+  }
+
+  .App .Ukrainian {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(251, 255, 0);
+    background-color: rgb(17, 0, 255);
+    padding-bottom: 40px;
+  }
+
+  .App .Header {
+    margin-top: 20px;
+    padding-bottom: 11px;
+  }
+
+  .App .Background {
+    position: absolute;
+    background-color: rgb(17, 0, 255);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+  }
+
+  .App .Container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+  }  
+
+  .App .Separator1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 8px;
+    border-top: 8px solid yellow;  
+    border-bottom: 2px solid yellow;  
+    margin-bottom: 2px;
+  }
+
+  .App .Separator2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid yellow;  
+  }
+
+  .App .Description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App .Streams {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    align-items: center;
+  }
+
+  .App .BoxPic > img {
+    width: 100%;
+    filter: blur(1px)
+  }  
+
+  .App .BoxPic {
+    width: 90%;
+    display: flex;
+    flex-grow: 1.1;
+    flex-basis: 0;
+    align-items: center;
+  }
+
+
+  .App .Buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: space-around;
+    align-items: left;
+    margin-top: 20px;
+  }
+
+  .App .Stream1,
+  .App .Stream2,
+  .App .Stream3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    height: 70px;
+  }
+
+
+  .App .ButtonCaption {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App .ButtonWrapper {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+  }
+
+  .App .Button {
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-right: 0;
+    border-left: 50px solid rgb(251, 255, 0);
+  }
+
+  p {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+
+  a.link, a.link:visited, a:visited.link, a:hover.link, a:active.link {
+    text-align: justify;
+    font-family: font-family helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    font-size: 22px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-decoration: underline;
+    color: rgb(251, 255, 0);
+  }
+
+  h1 {
+    font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 42.2px;
+  }
+
+  .App .English {
+    margin-top: 30px;
+  }
+
+  .App .Ukrainian {
+    margin-top: 25px;
+  }
+}
+
+.Button:hover {
+  border-left: 50px solid rgb(251, 0, 0);
+}
+
+.Loader,
+.ButtonWrapper.loading .Button {
+  display: none;
+}
+
+.ButtonWrapper.loading .Loader {
+  display: block;
+}
+
+.Button.playing {
+  border: 24px solid rgb(251, 255, 0);
+}
+
+.Button.playing:hover {
+  border: 24px solid rgb(251, 0, 0);
+}
