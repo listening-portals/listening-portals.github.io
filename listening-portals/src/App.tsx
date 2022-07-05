@@ -70,7 +70,7 @@ const Button: React.FC<ButtonProps> = props => {
       </BrowserView>
       
       <div className='Loader'>
-        <LoadingSpin size="41px"/>
+        <LoadingSpin size="36px"/>
       </div>
       <div className={`${state.play ? "playing" : ""} Button`} onClick={togglePlay}>
       </div>

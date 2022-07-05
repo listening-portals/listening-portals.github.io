@@ -117,9 +117,9 @@ div {
   .App .Button {
     width: 0;
     height: 0;
-    border: 29px solid transparent;
+    border: 26px solid transparent;
     border-right: 0;
-    border-left: 50px solid rgb(251, 255, 0);
+    border-left: 48px solid rgb(251, 255, 0);
   }
 
   p {
@@ -299,9 +299,9 @@ div {
   .App .Button {
     width: 0;
     height: 0;
-    border: 29px solid transparent;
+    border: 26px solid transparent;
     border-right: 0;
-    border-left: 50px solid rgb(251, 255, 0);
+    border-left: 48px solid rgb(251, 255, 0);
   }
 
   p {
@@ -475,9 +475,9 @@ div {
   .App .Button {
     width: 0;
     height: 0;
-    border: 29px solid transparent;
+    border: 26px solid transparent;
     border-right: 0;
-    border-left: 50px solid rgb(251, 255, 0);
+    border-left: 48px solid rgb(251, 255, 0);
   }
 
   p {
@@ -651,9 +651,9 @@ div {
   .App .Button {
     width: 0;
     height: 0;
-    border: 29px solid transparent;
+    border: 26px solid transparent;
     border-right: 0;
-    border-left: 50px solid rgb(251, 255, 0);
+    border-left: 48px solid rgb(251, 255, 0);
   }
 
   p {
@@ -828,9 +828,9 @@ div {
   .App .Button {
     width: 0;
     height: 0;
-    border: 29px solid transparent;
+    border: 26px solid transparent;
     border-right: 0;
-    border-left: 50px solid rgb(251, 255, 0);
+    border-left: 48px solid rgb(251, 255, 0);
   }
 
   p {
@@ -894,7 +894,7 @@ div {
 }
 
 .Button:hover {
-  border-left: 50px solid rgb(251, 0, 0);
+  border-left: 48px solid rgb(251, 0, 0);
 }
 
 .Loader,
