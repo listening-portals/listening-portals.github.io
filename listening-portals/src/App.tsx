@@ -3,8 +3,7 @@ import React from 'react';
 import './App.css';
 import Image from 'react-image-webp';
 import LoadingSpin from "react-loading-spin";
-
-
+import { BrowserView, MobileView } from 'react-device-detect';
 
 export interface ButtonProps {
   url: string;
@@ -19,7 +18,7 @@ const Button: React.FC<ButtonProps> = props => {
   });
 
   React.useEffect(() => {
-    // state.video.current && state.video.current.pause();
+    
     const finishLoading = () => {
       setState({
         ...state,
@@ -45,7 +44,7 @@ const Button: React.FC<ButtonProps> = props => {
     }
 
     if (newState.video.current) { 
-      newState.video.current.volume = 0.5
+      newState.video.current.volume = 1
     }
 
     if (newState.play) {
@@ -58,10 +57,17 @@ const Button: React.FC<ButtonProps> = props => {
 
   return (
     <div className={`${state.loading ? "loading" : ""} ButtonWrapper`}>      
-     
-      <audio hidden={true} controls={true} preload="auto" autoPlay={true} muted={false} ref={state.video}>
-        <source src={props.url} type="audio/mpeg"/>
-      </audio>
+      <MobileView>
+        <audio hidden={true} controls={true} preload="auto" autoPlay={true} muted={false} ref={state.video}>
+          <source src={props.url} type="audio/mpeg"/>
+        </audio>
+      </MobileView>
+
+      <BrowserView>
+        <audio hidden={true} controls={true} preload="auto" autoPlay={false} muted={false} ref={state.video}>
+          <source src={props.url} type="audio/mpeg"/>
+        </audio>
+      </BrowserView>
       
       <div className='Loader'>
         <LoadingSpin size="41px"/>
@@ -117,10 +123,10 @@ function App() {
               The work creates sound portals with the help of specially built sound boxes that were sent to three Ukrainian cities: Kyiv, Kharkiv, Odesa, Every day for 24 hours, with the help of a special mini computer and microphones located in each of the boxes, the sound of the cities will be streamed here. 
             </p>
             <p>
-              “Listening portals” is an open and mobile project.It is possible for new boxes to appear  in new cities and periodically to move across the territory of Ukraine.
+              “Listening portals” is an open and mobile project. It is possible for new boxes to appear in new cities and periodically to move across the territory of Ukraine.
             </p>
             <p>
-              The work was created in collaboration with Lia Mazzari &#38; Ben Parry.
+              The work was created in collaboration with <a className="link" href="https://liamazzari.com/">Lia Mazzari</a> &#38; Ben Parry.
               Special thanks to Grant Smith and <a className="link" href="https://soundtent.org/">Soundcamp</a> for helping build the boxes and Ilia Batii (baitcode) for technical support.
               For help in installing boxes in Ukraine, special thanks to: Prokhorenko Rodion.
             </p>
@@ -141,9 +147,9 @@ function App() {
               “Звукові портали” є відкритим та рухомим проектом, з часом можлива поява нових коробок у нових містах та періодичне їхнє переміщення по території України.
             </p>
             <p>
-              Робота була створена у колаборації з Лією Маццарі та Беном Паррі.
+              Робота була створена у колаборації з <a className="link" href="https://liamazzari.com/">Лією Маццарі</a> та Беном Паррі.
               За допомогу у встановленні боксів в Україні окрема подяка: Прохоренко Родіону.
-              Особлива подяка Grant Smith та Soundcamp за допомогу у будівництві коробок. та Іллі
+              Особлива подяка Grant Smith та <a className="link" href="https://soundtent.org/">Soundcamp</a> за допомогу у будівництві коробок. та Іллі
               Батію (baitcode) за технічну підтримку.
             </p>
           </div>
@@ -151,7 +157,7 @@ function App() {
       </div>
 
       <div className='Container'>
-        Powered by Locus Sonos
+        Powered by <a className="link" href="https://locusonus.org/wiki/index.php?page=Home.en">Locus Sonos</a>
       </div>
     </div>
   );

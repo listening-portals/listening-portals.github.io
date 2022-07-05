@@ -4,4 +4,4 @@ rm manifest.json
 rm index.html
 rm asset-manifest.json
 (cd ./listening-portals && npm run build)
-git add . && git commit -am "asd" && git push
+git add . && git commit -am "$1" && git push
