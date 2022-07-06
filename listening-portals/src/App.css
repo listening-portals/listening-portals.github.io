@@ -443,10 +443,10 @@ div {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-basis: 0;
+    /* flex-basis: 0; */
     justify-content: space-around;
     align-items: left;
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .App .Stream1,
@@ -532,7 +532,7 @@ div {
   }
 
   .App .English {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   .App .Ukrainian {
@@ -619,7 +619,7 @@ div {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-basis: 0;
+    /* flex-basis: 0; */
     justify-content: space-around;
     align-items: left;
     margin-top: 20px;
@@ -708,7 +708,7 @@ div {
   }
 
   .App .English {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   .App .Ukrainian {
@@ -795,7 +795,7 @@ div {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-basis: 0;
+    /* flex-basis: 0; */
     justify-content: space-around;
     align-items: left;
     margin-top: 20px;
