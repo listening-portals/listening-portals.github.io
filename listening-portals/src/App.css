@@ -558,6 +558,7 @@ div {
 @media (min-width: 500px) and (max-width: 800px) {
   #gallery {
     width: 100%;
+    margin-top: 10px;
   }
   .App {
     display: flex;
@@ -737,8 +738,9 @@ div {
 @media (min-width: 300px) and (max-width: 500px) {  
   #gallery {
     width: 100%;
+    margin-top: 10px;
   }
-  
+
   .App {
     display: flex;
     flex-direction: column;
