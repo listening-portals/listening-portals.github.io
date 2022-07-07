@@ -150,7 +150,7 @@ function App() {
             </p>
             <p>
               Автор проєкту: <a className="link" href="https://www.timothymaxymenko.com/">Тимофій Максименко</a> у колаборації з <a className="link" href="https://liamazzari.com/">Лією Маццарі</a> та Беном Паррі.
-              Проект був реалізований за підтримки <a className="link" href="https://pgs.pl/">Національної галерея в Сопоті</a>.
+              Проект був реалізований за підтримки <a className="link" href="https://pgs.pl/">Національної галереi в Сопоті</a>.
               Особлива подяка <a className="link" href="https://soundtent.org/">Grant Smith та Soundcamp</a> за допомогу у будівництві коробок. Іллі Батію (baitcode) за IT та технічну підтримку. 
               За допомогу у встановленні боксів в Україні окрема подяка: Прохоренко Родіону та Олексію Чистоніну. 
             </p>
