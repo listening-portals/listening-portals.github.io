@@ -3,6 +3,11 @@ div {
 }
 
 @media (min-width: 1200px) {
+  #gallery {
+    width: 20%;
+    margin-top: 20px;
+  }
+
   .App {
     display: flex;
     flex-direction: column;
@@ -183,6 +188,11 @@ div {
 }
 
 @media (min-width: 1000px) and (max-width: 1280px) {
+  #gallery {
+    width: 30%;
+    margin-top: 20px;
+  }
+
   .App {
     display: flex;
     flex-direction: column;
@@ -365,6 +375,11 @@ div {
 }
 
 @media (min-width: 800px) and (max-width: 1000px) {
+  #gallery {
+    width: 40%;
+    margin-top: 20px;
+  }
+
   .App {
     display: flex;
     flex-direction: column;
@@ -541,6 +556,9 @@ div {
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
+  #gallery {
+    width: 100%;
+  }
   .App {
     display: flex;
     flex-direction: column;
@@ -716,7 +734,11 @@ div {
   }
 }
 
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px) {  
+  #gallery {
+    width: 100%;
+  }
+  
   .App {
     display: flex;
     flex-direction: column;

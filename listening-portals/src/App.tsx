@@ -161,7 +161,7 @@ function App() {
         Powered by <a className="link" href="https://locusonus.org/wiki/index.php?page=Home.en">Locus Sonus</a>
       </div>
       <div className='Container'>
-        <img src={GalleryImage} />
+        <img id="gallery" src={GalleryImage} />
       </div>
     </div>
   );
