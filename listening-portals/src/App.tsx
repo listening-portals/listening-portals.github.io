@@ -5,6 +5,10 @@ import Image from 'react-image-webp';
 import LoadingSpin from "react-loading-spin";
 import { BrowserView, MobileView } from 'react-device-detect';
 import GalleryImage from './assets/gallery.png';
+// import ReactGA from 'react-ga';
+// ReactGA.initialize('UA-000000-01');
+// ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 export interface ButtonProps {
   url: string;
@@ -114,7 +118,7 @@ function App() {
               </div>
               <div className='Stream3'>
                 <Button id="a3" url="https://listening-portals.baitcode.link/ukraine_mobile_1.mp3" />
-                <h1 className='ButtonCaption'>ODESSA</h1>
+                <h1 className='ButtonCaption'>ODESA</h1>
               </div>
             </div>
           </div>
