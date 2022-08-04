@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-mixpanel": "^1.0.5"
+  }
+}

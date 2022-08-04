@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { MixpanelProvider } from 'react-mixpanel-browser';
+import mixpanel from 'mixpanel-browser';
+
+mixpanel.init("8a6834d23cbdfb3c1988e2201dd08458");
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <MixpanelProvider>
-      <App />
-    </MixpanelProvider>
+    <App mixpanel={mixpanel}/>
   </React.StrictMode>
 );
 

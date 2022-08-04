@@ -5,8 +5,6 @@ import Image from 'react-image-webp';
 import LoadingSpin from "react-loading-spin";
 import { BrowserView, MobileView } from 'react-device-detect';
 import GalleryImage from './assets/gallery.png';
-import { useMixpanel } from 'react-mixpanel-browser';
-
 // import ReactGA from 'react-ga';
 // ReactGA.initialize('UA-000000-01');
 // ReactGA.pageview(window.location.pathname + window.location.search);
@@ -15,6 +13,7 @@ import { useMixpanel } from 'react-mixpanel-browser';
 export interface ButtonProps {
   url: string;
   id: string;
+  mixpanel: Mixpanel;
 }
 
 const Button: React.FC<ButtonProps> = props => { 
@@ -24,8 +23,6 @@ const Button: React.FC<ButtonProps> = props => {
     url: null,
     video: React.createRef<HTMLVideoElement>()
   });
-
-  const mixpanel = useMixpanel();
 
   React.useEffect(() => {
     
@@ -58,10 +55,10 @@ const Button: React.FC<ButtonProps> = props => {
     }
 
     if (newState.play) {
-      mixpanel.track(`Stream ${newState.url} started`)
+      props.mixpanel.track(`Stream ${props.id} started`)
       newState.video.current && newState.video.current.play()
     } else {
-      mixpanel.track(`Stream ${newState.url} stopped`)
+      props.mixpanel.track(`Stream ${props.id} stopped`)
       newState.video.current && newState.video.current.pause()
     }
     setState(newState);
@@ -90,7 +87,13 @@ const Button: React.FC<ButtonProps> = props => {
   )
 }
 
-function App() {
+
+export interface AppProps {
+  mixpanel: Mixpanel;
+}
+
+const App: React.FC<AppProps> = props => { 
+  const mixpanel = props.mixpanel
 
   return (
     <div className="App">
@@ -114,17 +117,18 @@ function App() {
             <div className='BoxPic'>
               <Image src={require("./assets/box.png")} webp={require("./assets/box.webp")}></Image>
             </div>
+
             <div className='Buttons'>
               <div className='Stream1'>
-                <Button id="a1" url="https://listening-portals.baitcode.link/ukraine_mobile_3.mp3" />
+                <Button id="kyiv" url="https://listening-portals.baitcode.link/ukraine_mobile_3.mp3" mixpanel={mixpanel} />
                 <h1 className='ButtonCaption'>KYIV</h1>
               </div>
               <div className='Stream2'>
-                <Button id="a2" url="https://listening-portals.baitcode.link/ukraine_mobile_2.mp3" />
+                <Button id="kharkiv" url="https://listening-portals.baitcode.link/ukraine_mobile_2.mp3" mixpanel={mixpanel} />
                 <h1 className='ButtonCaption'>KHARKIV</h1>
               </div>
               <div className='Stream3'>
-                <Button id="a3" url="https://listening-portals.baitcode.link/ukraine_mobile_1.mp3" />
+                <Button id="odesa" url="https://listening-portals.baitcode.link/ukraine_mobile_1.mp3" mixpanel={mixpanel} />
                 <h1 className='ButtonCaption'>ODESA</h1>
               </div>
             </div>
