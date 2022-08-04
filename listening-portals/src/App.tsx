@@ -5,6 +5,8 @@ import Image from 'react-image-webp';
 import LoadingSpin from "react-loading-spin";
 import { BrowserView, MobileView } from 'react-device-detect';
 import GalleryImage from './assets/gallery.png';
+import { useMixpanel } from 'react-mixpanel-browser';
+
 // import ReactGA from 'react-ga';
 // ReactGA.initialize('UA-000000-01');
 // ReactGA.pageview(window.location.pathname + window.location.search);
@@ -19,8 +21,11 @@ const Button: React.FC<ButtonProps> = props => {
   const [state, setState] = React.useState({
     loading: true,
     play: false,
+    url: null,
     video: React.createRef<HTMLVideoElement>()
   });
+
+  const mixpanel = useMixpanel();
 
   React.useEffect(() => {
     
@@ -53,8 +58,10 @@ const Button: React.FC<ButtonProps> = props => {
     }
 
     if (newState.play) {
+      mixpanel.track(`Stream ${newState.url} started`)
       newState.video.current && newState.video.current.play()
     } else {
+      mixpanel.track(`Stream ${newState.url} stopped`)
       newState.video.current && newState.video.current.pause()
     }
     setState(newState);

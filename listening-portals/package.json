@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
+    "@types/mixpanel": "^2.14.4",
     "@types/node": "^16.11.43",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "react-image-webp": "^0.8.0"
+    "react-image-webp": "^0.8.0",
+    "react-mixpanel-browser": "^3.2.2"
   }
 }
