@@ -128,7 +128,7 @@ const App: React.FC<AppProps> = props => {
                 <h1 className='ButtonCaption'>KHARKIV</h1>
               </div>
               <div className='Stream3'>
-                <Button id="odesa" url="https://listening-portals.baitcode.link/ukraine_mobile_1.mp3" mixpanel={mixpanel} />
+                <Button id="odesa" url="https://listening-portals.baitcode.link/marseille_frioul.mp3" mixpanel={mixpanel} />
                 <h1 className='ButtonCaption'>ODESA</h1>
               </div>
             </div>
