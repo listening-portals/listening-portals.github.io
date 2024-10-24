@@ -144,7 +144,7 @@ const App: React.FC<AppProps> = props => {
             <p>
               Project by <a className="link" href="https://www.timothymaxymenko.com/">Timothy Maxymenko</a> in collaboration with <a className="link" href="https://liamazzari.com/">Lia Mazzari</a> & Ben Parry. 
               The project was realized with support of <a className="link" href="https://pgs.pl/">Sopot National Art Gallery</a>.
-              Special thanks to <a className="link" href="https://soundtent.org/">Grant Smith and Soundcamp</a> for helping build the boxes. Ilia Batii (baitcode) for IT and technical support. 
+              Special thanks to <a className="link" href="https://soundtent.org/">Grant Smith and Soundcamp</a> for helping build the boxes. 
               For help in installing boxes in Ukraine, special thanks to: Prokhorenko Rodion & Oleksii Chystotin.
             </p>
           </div>
@@ -166,7 +166,7 @@ const App: React.FC<AppProps> = props => {
             <p>
               Автор проєкту: <a className="link" href="https://www.timothymaxymenko.com/">Тимофій Максименко</a> у колаборації з <a className="link" href="https://liamazzari.com/">Лією Маццарі</a> та Беном Паррі.
               Проект був реалізований за підтримки <a className="link" href="https://pgs.pl/">Національної галереї в Сопоті</a>.
-              Особлива подяка <a className="link" href="https://soundtent.org/">Grant Smith та Soundcamp</a> за допомогу у будівництві коробок. Іллі Батію (baitcode) за IT та технічну підтримку. 
+              Особлива подяка <a className="link" href="https://soundtent.org/">Grant Smith та Soundcamp</a> за допомогу у будівництві коробок. 
               За допомогу у встановленні боксів в Україні окрема подяка: Прохоренко Родіону та Олексію Чистоніну. 
             </p>
           </div>
